@@ -1,0 +1,16 @@
+html,
+body {
+  font-family: 'Helvetica', arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
