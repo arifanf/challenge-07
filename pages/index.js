@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import Navbar from '../components/Navbar/Navbar'
+import Image from 'next/image'
+import Card from '../components/Card/Card'
+
 
 export default function Home() {
   return (
@@ -11,8 +13,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex justify-center items-center text-4xl font-bold mt-7 text-neutral-800">
-        Welcome to Homepage!
+      <div className="flex flex-col justify-center items-center mt-7 text-neutral-800">
+        <div className="text-4xl font-bold mb-4">Welcome Student</div>
+        <div className="italic mb-8">create by Next JS</div>
+      </div>
+
+      <div className="grid gap-12 place-items-center place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 m-8">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
 
     </div>
