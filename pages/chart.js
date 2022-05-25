@@ -1,6 +1,7 @@
 import React from 'react'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { Pie } from 'react-chartjs-2'
+import DefaultLayout from '../layouts/DefaultLayout'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
@@ -35,14 +36,21 @@ const data = {
 
 const Chart = () => {
   return (
-    <div className="container mx-auto px-4 py-6">
-      <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
-        This is <span className="text-emerald-900 ml-2">CHARTPAGE!</span>
+    <DefaultLayout>
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
+          This is <span className="text-emerald-900 ml-2">CHARTPAGE!</span>
+        </div>
+        <div className="my-4">
+          <Pie 
+            data={data} 
+            width={500}
+            height={500}
+            options={{ maintainAspectRatio: false }}
+          />
+        </div>
       </div>
-      <div className="my-4">
-        <Pie data={data} />
-      </div>
-    </div>
+    </DefaultLayout>
   )
 }
 
