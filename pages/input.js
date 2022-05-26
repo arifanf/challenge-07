@@ -71,7 +71,7 @@ const Input = () => {
       </Head>
       
       <div>
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 py-6 font-main">
           <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
             This is <span className="text-emerald-900 ml-2">INPUTPAGE</span>
           </div>
@@ -112,14 +112,14 @@ const Input = () => {
               </div>
               <StyledDiv {...getRootProps()}>
                 <input {...getInputProps()} required/>
-                <p>Drag & drop your photos here, or click to select files</p>
+                <p className="font-medium font-main">Drag & drop your photos here, or click to select files</p>
               </StyledDiv>
               <ul className="text-center text-xs italic">{files}</ul>
               <div>
                 <button 
                   type="submit" 
                   value="submit"
-                  className="bg-emerald-900 hover:bg-emerald-700 text-white font-bold py-2 px-4 mt-2 w-[200px] rounded"
+                  className="bg-emerald-900 hover:bg-emerald-700 text-white font-bold py-2 px-4 mt-2 w-[219px] rounded"
                 >
                   Submit
                 </button>
@@ -139,7 +139,7 @@ const StyledDiv = tw.div`
   border-[1px]
   px-2
   py-2
-  w-[200px]
+  w-[219px]
   font-md
   text-sm
   text-center

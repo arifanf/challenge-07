@@ -7,9 +7,12 @@ const Navbar = () => {
     <div className="font-sans bg-emerald-200 text-yellow-900 w-full" >
         <div className="container py-6">
             <div className="flex justify-between items-center">
-                <div>
-                    <h2 className="text-2xl font-bold"><Link href="/">StudentApp</Link></h2>
-                </div>
+                <Link href="/">
+                    <div className="flex flex-row">
+                        <img src="/list.svg" alt="" className="w-8 h-8" />
+                        <h2 className="text-2xl font-bold ml-2">StudentApp</h2>
+                    </div>
+                </Link>
                 <div>
                     <ul className="flex space-x-4 font-medium">
                         <li><Link href="/input">Input</Link></li>
