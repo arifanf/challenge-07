@@ -5,11 +5,11 @@ import { Pie } from 'react-chartjs-2'
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 const data = {
-  labels: ['1', '2', '3', '4', '5', '6', '7'],
+  labels: ['Read', 'Writing', 'Playing Football', 'Singing', 'Jogging', 'Working Out', 'Playing Basketball'],
   datasets: [
     {
       label: 'My First Dataset',
-      data: [65, 59, 80, 81, 20, 55, 40],
+      data: [65, 20, 80, 81, 20, 55, 40],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(255, 159, 64, 0.2)',
@@ -40,6 +40,7 @@ const Chart = () => {
         <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
           This is <span className="text-emerald-900 ml-2">CHARTPAGE!</span>
         </div>
+          <h2 className="text-center text-sm">{`This is chart of student's hobbies`}</h2>
         <div className="my-4">
           <Pie 
             data={data} 

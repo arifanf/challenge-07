@@ -30,19 +30,11 @@ const Card = () => {
           className="text-center bg-emerald-100 drop-shadow-2xl rounded-md px-4 py-8"
         >
           <Zoom>
-            { student.attributes.photo.data === null && 
-              <img
-                src="/profile.jpg"
+            <img
+                src={student.attributes.photo.data !== null ? student.attributes.photo.data.attributes.url : '/profile.jpg'}
                 alt='student'
                 className='rounded-full w-[200px] h-[200px]'
               />
-            }
-            { student.attributes.photo.data !== null && <img
-                src={student.attributes.photo.data.attributes.url}
-                alt='student'
-                className='rounded-full w-[200px] h-[200px]'
-              />
-            }
           </Zoom>
           <div className="mt-4">First Name :</div>
           <div className="font-bold text-emerald-800">

@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex justify-center items-center">
                 <div>
                     <h2 className="text-center text-sm font-semibold">Copyright@2022</h2>
-                    <p className="text-sm mt-[2px] italic">Challange Chapter 7 - FEJS2</p>
+                    <p className="text-sm mt-[2px] italic">Challange Chapter 7 - ANF</p>
                 </div>
                 <div>
                 </div>

@@ -10,14 +10,13 @@ const Student = () => {
     const [students, setStudents] = useState(null)
 
     const router = useRouter()
-    const { id} = router.query
+    const { id } = router.query
 
     useEffect(() => {
         axios.get(
           `https://fejs-c7-api.herokuapp.com/api/students/${id}?populate=*`
         ).then(res => {
           setStudents(res.data.data)
-          console.log(res)
         })
       }, [])
 
