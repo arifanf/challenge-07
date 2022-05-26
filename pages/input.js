@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import axios from 'axios'
 import { useDropzone } from 'react-dropzone'
-import DefaultLayout from '../layouts/DefaultLayout'
 import Head from 'next/head'
 
 import tw from 'tailwind-styled-components'
@@ -71,13 +70,13 @@ const Input = () => {
           <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <DefaultLayout>
+      <div>
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
             This is <span className="text-emerald-900 ml-2">INPUTPAGE</span>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <form onSubmit={formSubmitHandler} className="space-y-2 p-8 bg-orange-300/30 rounded-md">
+            <form onSubmit={formSubmitHandler} className="space-y-2 p-8 bg-orange-300/30 shadow-md rounded-md">
               <div className="border-[1px] border-solid border-stone-400">
                 <input 
                   type="text" 
@@ -89,7 +88,7 @@ const Input = () => {
                   required
                 />
               </div>
-              <div className="border-[1px] border-solid border-stone-400">
+              <div className="border-[1px] border-solid bg-orange-300/30 border-stone-400">
                 <input 
                 type="text"
                 name="lastname"
@@ -128,7 +127,7 @@ const Input = () => {
             </form>
           </div>
         </div>
-      </DefaultLayout>
+      </div>
     </>
   )
 }

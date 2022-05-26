@@ -5,7 +5,6 @@ import '@react-pdf-viewer/core/lib/styles/index.css'
 import '@react-pdf-viewer/default-layout/lib/styles/index.css'
 import Head from 'next/head'
 import Link from 'next/link'
-import DefaultLayout from '../layouts/DefaultLayout'
 
 const Download = () => {
   
@@ -19,7 +18,7 @@ const Download = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <DefaultLayout>
+      <>
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
             This is <span className="text-emerald-900 ml-2">DOWNLOADPAGE!</span>
@@ -33,7 +32,7 @@ const Download = () => {
             </Worker>
           </div>
         </div>
-      </DefaultLayout>
+      </>
     </>
   )
 }

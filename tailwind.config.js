@@ -5,11 +5,12 @@ module.exports = {
   ],
   theme: {
     container: {
-    center: true,
-    padding: '1.5rem',
+      center: true,
+      padding: '1.5rem'
+    },
     fontFamily: {
-      'sans': ['Helvetica', 'Arial', 'sans-serif'],
-    }
+      main: ['"Poppins"', 'sans-serif'],
+      secondary: ['"Rubik"', 'sans-serif']
     },
     extend: {},
   },
