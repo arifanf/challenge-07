@@ -75,7 +75,7 @@ const Input = () => {
       setFormMessageType("error")
       setShowFormMessage(true)
     }
-
+    setFormIsLoading(false)
   } 
 
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone()
@@ -94,10 +94,7 @@ const Input = () => {
           <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div style={{
-        opacity: formIsLoading ? 0.5 : 1,
-        pointerEvents: formIsLoading ? 'none' : 'all'
-      }}>
+      <div className={ formIsLoading === true ? 'opacity-30 pointer-events-none' : 'opacity-100 pointer-events-auto' }>
         <div className="container mx-auto px-4 py-6 font-main">
           <div className="flex items-center justify-center font-bold text-stone-800 text-2xl pb-8">
             This is <span className="text-emerald-900 ml-2">INPUTPAGE</span>
